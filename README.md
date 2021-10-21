@@ -17,3 +17,7 @@ Setter opp følgende ressurser i Azure
 NB: Om den skal brukes mot egen miljø, må egen GroupID defineres i aks.tf da denne peker til egen Azure AD gruppe innenfor egen tenant. 
 
 NB: Brukes kun for test, da denne har hardkodet verdier i backend.tf
+
+Bruk:
+
+Last ned Terraform binær filen for å kjøre lokalt, definere en service principal som har contributer rettigheter på backend.tf filen å fyll inn de blanke verdiene. Deretter kjør Terraform init for å laste ned Azure providern å deretter kjøre terraform plan og apply for å sette opp clusteret. 
